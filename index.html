@@ -8,32 +8,32 @@
     <title>Document</title>
     <link rel = "stylesheet" href = "style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+
 $(document).ready(function(){
-  // Add smooth scrolling to all links
+ 
   $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
 
-      // Store hash
+      
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, h2').animate({
+    
+      $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
+    
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 });
+
 </script>
 </head>
 <body>
@@ -62,7 +62,7 @@ $(document).ready(function(){
     <div class="row">
         <div class="col-md-12">
             <h2 id = "aboutme">About me</h2>
-            <p>Hello there, I hope all is well, my name is Caesar Cooper and I am a current student in the Year Up program. Year Up is an amazing program that prepares students for the professional world and closes the opportunity divide. Not only does Year Up set you up with the knowledge to navigate one of many work-related fields, but it also gives you the tools to maintain professionalism as you climb your ladder of success. I am currently pursuing the application development track. This track teaches you how to code in many languages, including Java and JavaScript, then applies that to developing API and full-stack applications. So far, I have learned the fundamentals of backend development and have used this newfound knowledge to build functional code. Before Year Up, I worked a dead-end nine-to-five job that was stagnant and did not allow me to live up to my true potential. After Year Up, I plan to apply the skills I’ve obtained to a productive yet satisfying profession while proving myself as an invaluable asset. If you require a motivated and energetic developer to improve your software, I would be more than ecstatic to exchange LinkedIn information with you and talk about mutualistic opportunities. Thank you for your time, and I look forward to reaching out to you.</p>
+            <p> <b>H</b>ello there, I hope all is well, my name is Caesar Cooper and I am a current student in the Year Up program. Year Up is an amazing program that prepares students for the professional world and closes the opportunity divide. Not only does Year Up set you up with the knowledge to navigate one of many work-related fields, but it also gives you the tools to maintain professionalism as you climb your ladder of success. I am currently pursuing the application development track. This track teaches you how to code in many languages, including Java and JavaScript, then applies that to developing API and full-stack applications. So far, I have learned the fundamentals of backend development and have used this newfound knowledge to build functional code. Before Year Up, I worked a dead-end nine-to-five job that was stagnant and did not allow me to live up to my true potential. After Year Up, I plan to apply the skills I’ve obtained to a productive yet satisfying profession while proving myself as an invaluable asset. If you require a motivated and energetic developer to improve your software, I would be more than ecstatic to exchange LinkedIn information with you and talk about mutualistic opportunities. Thank you for your time, and I look forward to reaching out to you.</p>
         </div>
     </div>
 
@@ -70,7 +70,7 @@ $(document).ready(function(){
         <div class="row">
             <div class="col-md-12">
                 <h2 id = "interests">Interests</h2>
-                <p>My calling in life is technology. Ever since I was younger, I was interested in the way things works, specifically the mechanics behind advanced computer programs. I was fond of robotics and anything technologically advanced. I was amazed and fell in love instantly with everything electronic.</p>
+                <p> <b>M</b>y calling in life is technology. Ever since I was younger, I was interested in the way things work, specifically the mechanics behind advanced computer programs. I was fond of robotics and anything technologically advanced. I was amazed and fell in love instantly with everything electronic.</p>
                 <p>I am also an extrovert. I love human interaction and working in a team environment. I believe communication is the key to cohesiveness and efficiency. I also flourish in a fast paced environment, I actually prefer it. Face paced environments keep my skills sharp and force me to prioritize and execute.</p>
                 
             </div>
@@ -87,7 +87,7 @@ $(document).ready(function(){
                         <li> <h4>Software: </h4><p>IntelliJ, Visual Studio Code, MySQL, H2, Postman, GitHub, Trello</p></li>
                         <li> <h4>Coding Languages: </h4><p>Java, JavaScript, Html,  SQL, UML</p></li>
                         <li> <h4>Frameworks: </h4><p>Spring boot, Bootstrap</p></li>
-                        <li> <h4>Computer Hardware: </h4><p>Knowledgeable about computer hardware and can diagnose and fix hardware problems if necessary</p></li>
+                        <li> <h4>Computer Hardware: </h4><p>Knowledgeable about computer hardware and can diagnose/fix hardware problems if necessary</p></li>
                         
                     </ul>
                 </nav>
@@ -106,7 +106,7 @@ $(document).ready(function(){
         <div class="row">
             <div class="col-md-6">
                 <img src="images/schoolpage.jpg" alt="">
-                <p>I graduated from Concord high school located in Wilmington, De. There I challenged myself by taking accelerated courses and took advanced placement tests for college credits. Theses courses include:</p>
+                <p> <b></b> I graduated from Concord high school located in Wilmington, De. There I challenged myself by taking accelerated courses and took advanced placement tests for college credits. Theses courses include:</p>
                 <nav>
                         <li>● Honors English</li>
                         <li>● Honors Spanish</li>
@@ -169,14 +169,29 @@ $(document).ready(function(){
     </div>
 </div>
 
-<script src="script.js"></script>
+<div>
+<form enctype = "application/x-www-form-urlencoded">
+    <h1>Contact me</h1>
+    <div id = "u">
+        <input type="text" placeholder="Username">
+    </div>
+    <div id = "e">
+        <input type="email" placeholder="Email">
+    </div>
+    <div id = "m">
+        <textarea placeholder="Message..." rows="5"></textarea>
+    </div>
+    <div id = "s">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</div>
 
-
-    
 <footer id = "footer">
     <p> Copyright &copy;</p>
-     <p><a href="Mailto:caesarkasambacooperjr@gmail.com">Email</a></p>
      <p><a href = "https://www.linkedin.com/in/caesar-cooper-51b09a211/">LinkedIn</a></p>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
